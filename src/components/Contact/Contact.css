@@ -1,0 +1,206 @@
+.Container-1 {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    height: 86vh;
+    height: 86vh;
+    height: 85vh;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 3.4rem;
+    left: 0rem;
+    padding: 0.4rem 2.8rem;
+    margin-top: 3rem;
+    box-sizing: border-box;
+}
+.form{
+    margin: 2rem 8rem 1rem 8rem;
+    align-items: center;
+    width: 65vw;
+    height: 35vw;
+    max-width: 820rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 1.5rem 1rem rgba( 0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+.contact-form {
+  background-color: #1abc9c;
+  position: relative;
+  border-radius: 3rem;
+  height: 81vh;
+}
+
+.contact-form::before{
+  content: "";
+  /* position: absolute; */
+  width: 26px;
+  height: 26px;
+  background-color: #1abc9c;
+  transform: rotate(45deg);
+  top: 50px;
+  left: -13px;
+}
+form{ 
+    padding: 1.3rem 2.2rem;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+}
+.heading{
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.7rem;
+}
+.input-container {
+  position: relative;
+  margin: 1rem 0;
+}
+
+input{
+  width: 100%;
+  outline: none;
+  border: 2px solid #fafafa;
+  background:none;
+  padding: 0.6rem 1.2rem; 
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+.input-container textarea {
+  padding: 0.8rem 1.2rem;
+  height: 49px;
+  border-radius: 27px;
+  resize: none;
+  color: #333;
+  background-color: #1abc9c;
+  overflow-y: auto;
+  border: 2px solid #fafafa;
+  width: 36.5rem;
+  position: relative;
+  right: 0.rem;
+  left: 0.1rem;
+}
+.input-container textarea::before{
+  padding: 0.8rem 1.2rem;
+  height: 60px;
+  margin: 1.5rem 2rem 0;
+  border-radius: 22px;
+  resize: none;
+  background-color: #1abc9c;
+  overflow-y: auto;
+  border: 2px solid #fafafa;
+  width: 350px;
+}
+.btn-5{
+  padding: 0.6rem 1.3rem;
+  background-color: #fff;
+  border: 2px solid #fafafa;
+  font-size: 0.95rem;
+  color: #1abc9c;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+} 
+.btn-5:hover{
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+} 
+.links{
+  width: 2rem;
+  color: #1abc9c;
+  margin: 0.2rem 0;
+
+}
+.contact-info{
+  padding: 2.3rem 2.2rem;
+  position: relative;
+}
+.contact-info .title{
+  color: #1abc9c;
+}
+.text{
+  color: #333;
+  margin: 1.5rem 2rem 0;
+}
+.information{
+  display: inline-block;
+  color: #333;
+  margin: 0.7rem 0;
+
+  font-size: 0.95rem;
+}
+.icon{
+  font-size: 1.5rem;
+ display: inline-block;
+ color: #1abc9c;
+}
+.icon.icon1{
+  text-align: left;
+  display: flex;
+}
+.information a{
+  text-decoration: none;
+  color: red;
+}
+
+@media (max-width: 1200px){
+  .container{
+    scroll-behavior: auto;
+    max-width: 926px;
+    align-items: center;
+    left: 4rem;
+}
+.contact-form {
+  background-color: #1abc9c;
+  position: relative;
+  min-width: 548px;
+  max-width: 10rem;
+}
+form{
+padding: 2.3rem 2.2rem;
+    width: max-content;
+}
+  .form {
+    margin: 2rem 8rem 1rem 8rem;
+    align-items: center;
+    /* width: 70vw; */
+    height: 35vw;
+    max-width: 820rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 1.5rem 1rem rgba( 0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+    display: contents;
+}
+.contact-info {
+  padding: 2.3rem 2.2rem;
+  width: 36rem;
+  position: relative;
+  display: table-caption;
+}
+
+}
+
+.label-style{
+
+  margin-bottom: 0.4rem;
+  position: relative;
+  left: 1rem;
+  /* font-family: 'Roboto'; */
+  font-weight: 400;
+
+
+}

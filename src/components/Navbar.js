@@ -11,6 +11,7 @@ import Home from './Home';
 import Search from './Search';
 import About from './About';
 import  Menu  from './menu/Menu';
+import Contact from './Contact/Contact';
 
 
 const Navbar1 = () => {
@@ -34,7 +35,7 @@ const Navbar1 = () => {
               <Nav.Link as={Link} to="/products" className='Nav-bar-anchor'>Products</Nav.Link>
               <Nav.Link as={Link} to="/Menu" className='Nav-bar-anchor'>Menu</Nav.Link>
               <Nav.Link as={Link} to="/about" className='Nav-bar-anchor'>About Us</Nav.Link>
-              <Nav.Link as={Link} to="/" className='Nav-bar-anchor'>Contact Us</Nav.Link>
+              <Nav.Link as={Link} to="/contact" className='Nav-bar-anchor'>Contact Us</Nav.Link>
              
               <div>
                 <div
@@ -70,7 +71,7 @@ const Navbar1 = () => {
   <Route path="/products" element={<Search/>}/>
   <Route path="/menu" element={<Menu/>}/>
   <Route path="/about" element={<About/>}/>
-  <Route path="/contact" element={<Home/>}/>
+  <Route path="/contact" element={<Contact/>}/>
   
 
 

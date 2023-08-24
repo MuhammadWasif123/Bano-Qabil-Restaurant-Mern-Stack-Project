@@ -1,12 +1,28 @@
 import React, { useState,useEffect } from 'react'
-import Fooddata from './FoodData'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form'
 import "./style.css"
 import Cards from './Cards'
+import axios from 'axios';
 
 const Search = () => {
-  const [fdata, setFdata] = useState(Fooddata);
+  
+  useEffect(() => {
+    // Fetch food data from the backend
+    console.log('Fetching from backend')
+    axios.get('http://localhost:5000/api/foods')
+    .then((response) => {
+      setFdata(response.data);
+      setCopyData(response.data);
+      console.log("fetching done!")
+    })
+      .catch((error) => {
+        console.error('Error fetching food data:', error);
+      });
+    }, []);
+    
+  const [fdata, setFdata] = useState([]);
   const [copydata, setCopyData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 

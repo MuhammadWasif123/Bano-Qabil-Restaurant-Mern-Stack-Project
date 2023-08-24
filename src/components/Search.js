@@ -5,10 +5,23 @@ import Form from 'react-bootstrap/Form'
 import "./style.css"
 import Cards from './Cards'
 
+// import { useNavigate } from 'react-router-dom';
+
 const Search = () => {
   const [fdata, setFdata] = useState(Fooddata);
   const [copydata, setCopyData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  // const [food,setFood]=useState({});
+  // const {addToCart} =useCart(); 
+  
+  // const navigate= useNavigate();
+
+  // const handleAddToCart=()=>{
+  //   addToCart(fdata);
+  //   // console.log(foodItem)
+  //   // navigate('./cart')
+  //   // console.log(foodItem);
+  // }
 
   const changeData = (searchTerm) => {
     const lowerCaseSearch = searchTerm.toLowerCase();
@@ -56,7 +69,7 @@ const Search = () => {
       <section className='item-section mt-4 container'>
         <h2 className='px-4 mb-3' style={{ fontWeight: 400, cursor: "pointer", fontFamily: "Roboto", color: "#6b4949" }}>Available Items Order Now!</h2>
         <div className="row mt-2 d-flex justify-content-around align-items-center">
-          {copydata.length ? <Cards data={copydata} /> : "No results found"}
+          {copydata.length ? <Cards data={copydata}  /> : "No results found"}
         </div>
       </section>
     </>

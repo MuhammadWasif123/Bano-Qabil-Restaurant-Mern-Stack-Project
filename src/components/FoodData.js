@@ -7,7 +7,8 @@ const Fooddata = [
     description: "Karachi Style,Spicy Biryani",
     somedata: "1415 + order placed recently from here",
     price: "PKR 290",
-    rating: "4.4"
+    rating: "4.4",
+    quantity:"1"
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ const Fooddata = [
     description: "Served with Coleslaw & Fries",
     somedata: "1415 + order placed recently from here",
     price: "PKR 450",
-    rating: "4.1"
+    rating: "4.1",
+    quantity:"1"
   }
 ,
   {
@@ -28,7 +30,8 @@ const Fooddata = [
     description: "Spicy Gravy & Served with Rice",
     somedata: "1415 + order placed recently from here",
     price: "PKR 520",
-    rating: "4.0"
+    rating: "4.0",
+    quantity:"1"
   },
   {
     id: 4,
@@ -39,6 +42,7 @@ const Fooddata = [
     somedata: "1415 + order placed recently from here",
     price: "PKR 850",
     rating: "3.8",
+    quantity:"1"
   
   },
   {
@@ -50,6 +54,7 @@ const Fooddata = [
     somedata: "1415 + order placed recently from here",
     price: "PKR 480",
     rating: "4.9",
+    quantity:"1"
   },
   {
     id: 6,
@@ -60,6 +65,7 @@ const Fooddata = [
     somedata: "1415 + order placed recently from here",
     price: "PKR 420",
     rating: "3.9",
+    quantity:"1"
   },
   {
     id: 7,
@@ -70,6 +76,7 @@ const Fooddata = [
     somedata: "1415 + order placed recently from here",
     price: "PKR 800",
     rating: "4.3",
+    quantity:"1"
   },
   {
     id: 8,
@@ -80,6 +87,7 @@ const Fooddata = [
     somedata: "1415 + order placed recently from here",
     price: "PKR 1500 Half",
     rating: "4.7",
+    quantity:"1"
   },
   {
     id: 9,
@@ -90,6 +98,7 @@ const Fooddata = [
     somedata: "1415 + order placed recently from here",
     price: "PKR 220",
     rating: "3.5",
+    quantity:"1"
   },
 ];
 

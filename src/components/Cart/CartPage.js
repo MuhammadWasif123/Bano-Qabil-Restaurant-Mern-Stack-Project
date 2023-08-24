@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 export default function CartPage() {  
-  const {cart,removeFromCart,changeQuantity,addToCart} = useCart();
+  const {cart,removeFromCart,changeQuantity} = useCart();
   // console.log('CART PAGE:', addToCart);
  
    
@@ -14,8 +14,8 @@ export default function CartPage() {
   return (
   <>
     {cart && cart.items.length > 0 && 
-    <div className="container">
-    <ul className="list">
+    <div className="container3">
+    <ul className="list3">
     {cart.items.map(item => <li key={item.food.id}>
     <div>
       <img src={`${item.food.imgsource}`} alt={item.food.fname}/>
@@ -49,10 +49,6 @@ export default function CartPage() {
 </div>
 <div>
 <button className="remove_button" onClick={() => removeFromCart(item.food.id)}>Remove</button>
-</div>
-<div>
-
-  <button onClick={() => addToCart(item.food.id,item.food.price)} >  </button>
 </div>
    </div>
     </li>)}

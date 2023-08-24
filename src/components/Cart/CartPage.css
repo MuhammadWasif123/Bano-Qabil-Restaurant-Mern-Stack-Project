@@ -1,4 +1,4 @@
-.container{
+.container3{
 display:flex;
 flex-wrap:wrap;
 align-items:flex-start;
@@ -7,7 +7,7 @@ margin-top:0.5rem;
 
 }
 
-.list{
+.list3{
 display:flex;
 flex-direction:column;
 flex:3 0;
@@ -19,7 +19,7 @@ margin:0.5rem;
 padding:0;
 }
 
-.list li{
+.list3 li{
 display:flex;
 justify-content:space-around;
 align-items:center;
@@ -27,29 +27,29 @@ flex-wrap:wrap;
 border-bottom:1px solid red;
 }
 
-.list li:last-child{
+.list3 li:last-child{
 border:none;
 
 }
 
-.list li img{
+.list3 li img{
 width:5rem;
 height:5rem;
 border-radius:100rem;
 object-fit:cover;
 }
 
-.list li div{
+.list3 li div{
 padding:1rem;
 
 }
 
-.list li div:not(:first-child){
+.list3 li div:not(:first-child){
 
 flex-basis:18%;
 }
 
-.list li select{
+.list3 li select{
 width:3rem;
 outline:none;
 border:none;

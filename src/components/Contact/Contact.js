@@ -10,14 +10,14 @@ const Contact = () => {
         message: "",
       });
     
-      const HandleSubmit = (e) => {
-        e.preventDefault();
-        console.log(state);
-      };
-      const HandleInput = (e) => {
-        let { name, value } = e.target;
-        setState({ ...state, [name]: value });
-      };
+      // const HandleSubmit = (e) => {
+      //   e.preventDefault();
+      //   console.log(state);
+      // };
+      // const HandleInput = (e) => {
+      //   let { name, value } = e.target;
+      //   setState({ ...state, [name]: value });
+      // };
     
       return (
         <>
@@ -36,7 +36,7 @@ const Contact = () => {
             
             <div className="contact-form">
     
-              <form onSubmit={HandleSubmit}>
+              <form action='https://formspree.io/f/mjvqwanl' method='POST'>
                 <div className="heading">
                   <h1>Contact Us</h1>
                 </div>
@@ -44,9 +44,10 @@ const Contact = () => {
                   <label className="label-style">Name</label>
                   <input
                     type="text"
-                    onChange={HandleInput}
-                    name="name"
+                    name="username"
+                    autoComplete='off'
                     placeholder="Enter Your Name"
+                    required
                   />
                 </div>
     
@@ -54,9 +55,10 @@ const Contact = () => {
                   <label className="label-style">Email </label>
                   <input
                     type="email"
-                    onChange={HandleInput}
                     name="email"
+                    autoComplete='off'
                     placeholder="Enter Your Email"
+                    required
                   />
                 </div>
     
@@ -64,8 +66,9 @@ const Contact = () => {
                   <label className="label-style">Phone </label>
                   <input
                     type="tel"
-                    onChange={HandleInput}
-                    name="phone"
+                    autoComplete='off'
+                    name="Phone"
+                    required
                     placeholder="111-222-444"
                   />
                 </div>
@@ -73,14 +76,14 @@ const Contact = () => {
                 <div className="input-container textarea">
                   <label className="label-style">Message</label>
                   <textarea
-                    onChange={HandleInput}
                     name="message"
-                    placeholder="Type Here"
+                    autoComplete='off'
+                    placeholder="Type Your Message"
                     style={{overflow:"hidden"}}
                   />
                 </div>
     
-                <button className="btn-5" type="submit">
+                <button className="btn-5" type="submit" value="send">
                   Send
                 </button>
               </form>

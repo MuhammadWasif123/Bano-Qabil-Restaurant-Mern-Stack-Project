@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import Badge from 'react-bootstrap/Badge';
 import { Link } from 'react-router-dom';
-import Modal from '../components/Modal';
-import Cart from '../components/Cart';
+// import Modal from '../components/Modal';
+// import Cart from '../components/Cart';
 import logoImg from '../assets/images/logo2.png'
 import "../components/Nav-home.css"
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
@@ -12,6 +12,7 @@ import Search from './Search';
 import About from './About';
 import  Menu  from './menu/Menu';
 import Contact from './Contact/Contact';
+import CartPage from './Cart/CartPage';
 
 
 const Navbar1 = () => {
@@ -36,25 +37,7 @@ const Navbar1 = () => {
               <Nav.Link as={Link} to="/Menu" className='Nav-bar-anchor'>Menu</Nav.Link>
               <Nav.Link as={Link} to="/about" className='Nav-bar-anchor'>About Us</Nav.Link>
               <Nav.Link as={Link} to="/contact" className='Nav-bar-anchor'>Contact Us</Nav.Link>
-             
-              <div>
-                <div
-                  className="btn bg-white text-success mx-2"
-                  onClick={() => {
-                    setCartView(true);
-                  }}
-                >
-                  My Cart{' '}
-                  <Badge pill bg="danger">
-                    2
-                  </Badge>
-                </div>
-              </div>
-              {cartView ? (
-                <Modal onClose={() => setCartView(false)}>
-                  <Cart />
-                </Modal>
-              ) : null}
+              <Nav.Link as={Link} to="/cart" className='Nav-bar-anchor'>Cart</Nav.Link>
               <div className='login-div'>
             <Nav.Link href="#link" className='Nav-bar-anchor'>Login</Nav.Link>
             <Nav.Link href="#link" className='Nav-bar-anchor'>Sign Up</Nav.Link>
@@ -72,6 +55,8 @@ const Navbar1 = () => {
   <Route path="/menu" element={<Menu/>}/>
   <Route path="/about" element={<About/>}/>
   <Route path="/contact" element={<Contact/>}/>
+  <Route path="/cart" element={<CartPage/>}/>
+
   
 
 

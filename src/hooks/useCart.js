@@ -13,7 +13,7 @@ totalCount:0,
 
 export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState(
-    Fooddata.slice(1, 4).map((food) => ({ food, quantity: 1, price: food.price }))
+    Fooddata.slice(1, 3).map((food) => ({ food, quantity: 1, price: food.price }))
   );
   // console.log("Wasif",cartItems);
   const [totalPrice, setTotalPrice] = useState(40);
@@ -35,15 +35,14 @@ const {food}=cartItem;
 
 const changedCartItem={
 ...cartItem,
-quantity:newQuantity,
+quantity : newQuantity,
 price: food.price * newQuantity,
 };
 
 setCartItems(
 cartItems.map(item =>(item.food.id === food.id ? changedCartItem: item ))
-
-
 );
+
 };
 
 const addToCart=food => {

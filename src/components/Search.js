@@ -1,14 +1,28 @@
 import React, { useState,useEffect } from 'react'
-import Fooddata from './FoodData'
+// import Fooddata from './FoodData'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form'
 import "./style.css"
 import Cards from './Cards'
-
-// import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const Search = () => {
-  const [fdata, setFdata] = useState(Fooddata);
+  
+  useEffect(() => {
+    // Fetch food data from the backend
+    console.log('Fetching from backend')
+    axios.get('http://localhost:5000/api/foods')
+    .then((response) => {
+      setFdata(response.data);
+      setCopyData(response.data);
+      console.log("fetching done!")
+    })
+      .catch((error) => {
+        console.error('Error fetching food data:', error);
+      });
+    }, []);
+    
+  const [fdata, setFdata] = useState([]);
   const [copydata, setCopyData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   // const [food,setFood]=useState({});
@@ -69,7 +83,8 @@ const Search = () => {
       <section className='item-section mt-4 container'>
         <h2 className='px-4 mb-3' style={{ fontWeight: 400, cursor: "pointer", fontFamily: "Roboto", color: "#6b4949" }}>Available Items Order Now!</h2>
         <div className="row mt-2 d-flex justify-content-around align-items-center">
-          {copydata.length ? <Cards data={copydata}  /> : "No results found"}
+          {copydata.length ? <Cards  key={copydata.id} //adding key
+                data={copydata}  /> : "No results found"}
         </div>
       </section>
     </>

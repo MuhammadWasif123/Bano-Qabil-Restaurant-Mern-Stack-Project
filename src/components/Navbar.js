@@ -13,10 +13,27 @@ import About from './About';
 import  Menu  from './menu/Menu';
 import Contact from './Contact/Contact';
 import CartPage from './Cart/CartPage';
+import LoginPage from './Login/LoginPage';
+import { logout } from '../Services/services';
+
+const userCheck = () =>{
+  const isuser = localStorage.getItem('user') ? true : false;
+  console.log(isuser);
+  var localuser = JSON.parse(localStorage.getItem('user'))
+
+  console.log(localuser.name)
+}
+const isuser = localStorage.getItem('user') ? true : false;
+
 
 
 const Navbar1 = () => {
   const [cartView, setCartView] = useState(false);
+
+  const isuser = localStorage.getItem('user') ? true : false;
+
+  
+  var localuser = JSON.parse(localStorage.getItem('user')) ? JSON.parse(localStorage.getItem('user')) : null;
 
   return (
     <>
@@ -39,8 +56,25 @@ const Navbar1 = () => {
               <Nav.Link as={Link} to="/contact" className='Nav-bar-anchor'>Contact Us</Nav.Link>
               <Nav.Link as={Link} to="/cart" className='Nav-bar-anchor'>Cart</Nav.Link>
               <div className='login-div'>
-            <Nav.Link href="#link" className='Nav-bar-anchor'>Login</Nav.Link>
-            <Nav.Link href="#link" className='Nav-bar-anchor'>Sign Up</Nav.Link>
+
+              { !isuser && <>
+                <Nav.Link as={Link} to="/login" 
+                className='Nav-bar-anchor'>Login</Nav.Link>
+              <Nav.Link href="#link" className='Nav-bar-anchor'>Sign Up</Nav.Link>
+              
+              </>
+
+              }
+            { isuser && 
+            <>
+            <Nav.Link  href="#link" className='Nav-bar-anchor' onClick={logout} >Logout</Nav.Link>
+            <Nav.Link  href="#link" className='Nav-bar-anchor'> {localuser.name} </Nav.Link>
+            {/* <button onClick={userCheck} >click </button> */}
+            </>           
+              }
+            
+        
+            
             </div>
             </Nav>
           </Navbar.Collapse>
@@ -56,9 +90,7 @@ const Navbar1 = () => {
   <Route path="/about" element={<About/>}/>
   <Route path="/contact" element={<Contact/>}/>
   <Route path="/cart" element={<CartPage/>}/>
-
-  
-
+  <Route path="/login" element={<LoginPage/>}/>
 
 
 </Routes>

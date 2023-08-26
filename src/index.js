@@ -5,13 +5,31 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {CartProvider} from './hooks/useCart'
 import './axiosConfig.js'
+import { AuthProvider } from './hooks/useAuth';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <CartProvider>
-   <App />
-    </CartProvider>
+    <AuthProvider>
+      <CartProvider>
+        <App />
+        <ToastContainer
+        position="bottom-right"
+        autoClose={3000}
+        hideProgressBar={true}
+        newestOnTop={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme='light'
+        ></ToastContainer>
+      </CartProvider>
+    </AuthProvider>
   </React.StrictMode>
 );
 

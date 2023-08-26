@@ -10,7 +10,6 @@ const App = () => {
       <BrowserRouter>
           <Navbar1 />
       </BrowserRouter>
-      
     </>
   );
 };

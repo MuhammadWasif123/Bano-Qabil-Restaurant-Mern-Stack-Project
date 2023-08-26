@@ -1,8 +1,12 @@
 import express from "express";
 import cors from 'cors';
 import foodRouter from './routers/foodRouter.js';
+import userRouter from './routers/userRouter.js'
+
+
 const app = express();
 
+app.use(express.json());
 app.use(
     cors({
         credentials: true,
@@ -10,7 +14,11 @@ app.use(
     })
 );
 
+// app.use('/', console.log("Server is live"));
 app.use('/api/foods', foodRouter);
+app.use('/api/users', userRouter);
+
+
 
 const PORT = 5000;
 

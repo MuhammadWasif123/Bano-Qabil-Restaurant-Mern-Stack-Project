@@ -18,14 +18,14 @@ export default function CartPage() {
     <ul className="list3">
     {cart.items.map(item => <li key={item.food.id}>
     <div>
-      <img src={`${item.food.imgsource}`} alt={item.food.fname}/>
+      <img src={item.food.imgsource} alt={item.food.fname}/>
     </div>
     <div>
    {item.food.fname}
     </div>
    
   <div>
-  <select value={item.quantity} onChange={(e) => changeQuantity(item , Number(e.target.value))}>
+  <select value={item.quantity} onChange={e => {changeQuantity(item , Number(e.target.value)); console.log('Quantity changed')}  }>
 <option>1</option>
 <option>2</option>
 <option>3</option>
@@ -56,10 +56,8 @@ export default function CartPage() {
 <div className="checkout">
 <div>
 
-<div className="foods_count">
-  {cart.totalCount} </div>
-  <div className="total_price"
->  price:{cart.totalPrice}  </div>
+<div className="foods_count">{cart.totalCount} </div>
+  <div className="total_price">price:{cart.totalPrice}</div>
 
 </div>
 

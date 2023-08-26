@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 3rem;
+  }
+  
+  .details {
+    width: 28rem;
+  }
+  
+  .details form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btncontainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .btncontainer button {
+
+    border: none;
+    outline: none;
+    font-weight: 400;
+    border-radius: 0.8rem;
+    width: 50%;
+    height: 2rem;
+    margin: 1rem auto;
+    background-color: #E55058;
+    color: aliceblue;
+  }
+
+ .title{
+    color: #E55058;
+    margin: 20px auto;
+    text-align: center;
+ }

@@ -1,3 +1,4 @@
+// import { parse } from '@fortawesome/fontawesome-svg-core';
 import axios from 'axios';
 
 export const getAll = async () => {
@@ -25,3 +26,21 @@ export const getById = async foodId => {
   const { data } = await axios.get('/api/foods/' + foodId);
   return data;
 };
+
+
+
+// For USERS SERVICES
+
+export const getUser = () => localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null;  
+
+export const login = async (email, password) => {
+  const {data} = await axios.post('api/users/login', {email, password});
+  localStorage.setItem('user', JSON.stringify(data));
+  return data;
+};
+
+export const logout = () =>{
+  localStorage.removeItem('user');
+  window.location.reload(false);
+};
+

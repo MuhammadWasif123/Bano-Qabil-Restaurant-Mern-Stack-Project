@@ -121,3 +121,33 @@ font-size: 2.5rem;
     font-weight: bold;
 
 }
+
+.proceed-button{
+
+
+  background-color: rgb(215 81 88);
+  outline: none;
+  border-top-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.6rem;
+  font-family: 'Open Sans';
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.39rem;
+  font-size: 0.96rem;
+  position: relative;
+  left: 19rem;
+  margin-top: 2rem;
+
+}
+
+.proceed-button:hover{
+
+    background-color: #4b4d47;
+    transition: 0.3s;
+
+}
+
+
+

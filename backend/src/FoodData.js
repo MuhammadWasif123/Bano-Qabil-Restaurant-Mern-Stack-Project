@@ -1,4 +1,4 @@
-const Fooddata = [
+export const Fooddata = [
   {
     id: 1,
     fname: "Chicken Biryani",

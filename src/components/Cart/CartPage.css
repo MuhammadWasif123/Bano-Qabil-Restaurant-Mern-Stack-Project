@@ -1,0 +1,123 @@
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 0.6rem;
+    height: 90vh;
+}
+  
+  .cart-item {
+    display: flex;
+    border: 2px solid #bdacac;
+    margin-bottom: 21px;
+    padding: 1rem 1.3rem;
+    border-radius: 2.7rem;
+    background: #fff0f0;
+  }
+  
+  .cart-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 42px;
+    border-radius: 1rem;
+}
+  
+  .cart-item-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .cart-item-name {
+    font-weight: bold;
+    margin-bottom: 13px;
+    color: #615c55;
+    font-size: 1rem;
+    /* margin-right: -6.8rem; */
+    /* padding-right: 3.2rem; */
+    font-family: 'Open Sans';
+    position: relative;
+    right: 0.3rem;
+}
+  
+  .cart-item-price {
+    align-self: flex-end;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    position: relative;
+    font-size: 0.96rem;
+    /* margin-top: 1rem; */
+    left: 3.2rem;
+}
+  
+  .cart-item-quantity {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-item-quantity button {
+    border: none;
+    background: #ff6464c9;
+    padding: 3px 11px;
+    cursor: pointer;
+    border-radius: 0.4rem;
+}
+.cart-item-quantity span {
+    margin: 0 10px;
+    font-family: 'Open Sans';
+    font-size: 0.98rem;
+}
+  .remove-style {
+    position: relative;
+    background-color: rgb(215 81 88);
+    outline: none;
+    border-top-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.6rem;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    letter-spacing: 0.02rem;
+    border: none;
+    color: white;
+    padding: 0.34rem 0.39rem;
+    font-size: 0.96rem;
+    right: 2.3rem;
+}
+
+.remove-style:hover{
+    background-color: #4b4d47;
+    transition: 0.3s;
+
+}
+
+.main-cart-heading{
+font-size: 2.5rem;
+    font-family: 'Roboto';
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #6d6565;
+
+}
+
+.empty-card-para{
+
+    text-align: center;
+    margin-top: 10rem;
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+.total-amount{
+    font-family: 'Open Sans';
+    /* border: 1px solid red; */
+    border: 2px solid #9d9292;
+    width: 14rem;
+    margin: auto;
+    padding: 0.5rem 0.7rem;
+    border-radius: 1rem;
+    background: #fff1f3;
+    font-weight: bold;
+
+}

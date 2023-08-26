@@ -1,0 +1,148 @@
+.checkout-item{
+
+    display: flex;
+    border: 2px solid #bdacac;
+    margin-bottom: 21px;
+    padding: 1rem 1.3rem;
+    border-radius: 2.7rem;
+    background: #fff0f0;
+}
+
+
+
+.checkout-heading{
+
+    font-size: 2.5rem;
+    font-family: 'Roboto';
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #6d6565;
+}
+
+.checkout-container{
+
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 0.6rem;
+    height: 90vh;
+
+
+}
+
+
+.checkout-item-image img {
+    width: 100px;
+    height: auto;
+    margin-right: 42px;
+    border-radius: 1rem;
+}
+
+.checkout-item-name{
+
+    font-weight: bold;
+    margin-bottom: 13px;
+    color: #615c55;
+    font-size: 1rem;
+    /* margin-right: -6.8rem; */
+    /* padding-right: 3.2rem; */
+    font-family: 'Open Sans';
+    position: relative;
+    right: 0.3rem;
+
+
+}
+
+.checkout-item-amount {
+    align-self: flex-end;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    position: relative;
+    font-size: 0.96rem;
+    /* margin-top: 1rem; */
+    left: 11.2rem;
+}
+
+.checkout-item-quantity{
+    position: relative;
+    top: 3rem;
+    right: 9rem;
+    font-size: 1.1rem;
+    font-family: 'Open sans-serif';
+    font-weight: 500;
+}
+
+.back-button{
+    text-decoration: underline;
+    -webkit-text-decoration: noen;
+    text-decoration: noen;
+    text-decoration: none;
+    color: white;
+    background-color: #e55b5b;
+    padding: 0.2rem 0.6rem;
+    font-family: 'Open sans-serif';
+    font-weight: bold;
+    border-radius: 1rem;
+    position: relative;
+    left: 20rem;
+    
+}
+
+.payment-heading{
+
+
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color:#6d6565;
+}
+.payment-methods{
+    text-align: center;
+    margin-bottom: 1rem;
+
+
+
+}
+
+.payment-method-option{
+
+    text-align: center;
+
+}
+
+.checkout-total{
+
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 1.1rem;
+
+}
+
+.place-order-button{
+
+    position: relative;
+    background-color: rgb(215 81 88);
+    outline: none;
+    border-top-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.6rem;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    letter-spacing: 0.02rem;
+    border: none;
+    color: white;
+    padding: 0.34rem 0.39rem;
+    font-size: 0.96rem;
+    /* right: 2.3rem; */
+    text-align: center;
+    left: 20rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.order-message{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: 'Open sans-serif';
+
+}
+

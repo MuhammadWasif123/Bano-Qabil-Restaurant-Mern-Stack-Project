@@ -13,6 +13,7 @@ export const AuthProvider = ({ children }) => {
             const user = await service.login(email, password);
             setUser(user);
             toast.success('Login Successful');
+            window.location.reload();
         } catch (err) {
             toast.error(err.response.data);
         }

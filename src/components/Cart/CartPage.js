@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { useCart } from '../../hooks/useCart';
 import "./CartPage.css"
 import { useNavigate } from 'react-router-dom';
@@ -7,6 +7,10 @@ const CartPage = () => {
   const { cart, changeQuantity, removeFromCart } = useCart();
   const navigate = useNavigate();
   let totalAmount = 0;
+
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }, [cart]);
 
   return (
     <div className="cart-container">
@@ -55,12 +59,3 @@ const CartPage = () => {
 };
 
 export default CartPage;
-
-
-
-
-
-
-
-
-

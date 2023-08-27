@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { useCart } from '../../hooks/useCart';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import "./CheckoutPage.css"; // Import your CSS for Checkout styling
 
 
 const CheckoutPage = () => {
   const { cart } = useCart();
+  const navigate = useNavigate();
   let totalAmount = 0;
   
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState(null)
@@ -13,8 +14,11 @@ const CheckoutPage = () => {
 
   const handlePlaceOrder = () => {
     if (selectedPaymentMethod) {
-      // Simulate placing an order with the selected payment method (add your actual logic here)
       setOrderMessage('Your item has been ordered!');
+
+      setTimeout(() => {
+        navigate('/'); 
+      }, 2000); 
     } else {
       alert('Please select a payment method.');
     }
@@ -57,11 +61,11 @@ const CheckoutPage = () => {
     <label>
       <input
         type="radio"
-        value="paypal"
-        checked={selectedPaymentMethod === "paypal"}
-        onChange={() => setSelectedPaymentMethod("paypal")}
+        value="HBL"
+        checked={selectedPaymentMethod === "HBL"}
+        onChange={() => setSelectedPaymentMethod("HBL")}
       />
-      PayPal
+      HBL
     </label>
     <label>
       <input

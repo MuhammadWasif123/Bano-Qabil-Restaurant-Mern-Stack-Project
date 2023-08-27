@@ -8,7 +8,7 @@ import Cards from './Cards'
 // import { useNavigate } from 'react-router-dom';
 
 const Search = () => {
-  const [fdata, setFdata] = useState(Fooddata);
+  const [fdata] = useState(Fooddata);
   const [copydata, setCopyData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   // const [food,setFood]=useState({});

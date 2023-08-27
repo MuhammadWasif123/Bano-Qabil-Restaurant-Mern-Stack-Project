@@ -1,4 +1,4 @@
-.container {
+/* .container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,4 +45,8 @@
     color: #E55058;
     margin: 20px auto;
     text-align: center;
- }
+ } */
+
+.input{
+  color: black;
+}

@@ -1,0 +1,172 @@
+/* .about .row{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:1.5rem;
+
+
+
+} */
+
+/* .about .row .image{
+flex:1 1 46rem;   
+
+} */
+
+body {
+overflow-x: hidden;
+
+}
+
+.about{
+    background-color: #ffc0c0;
+    height: 90vh;
+    /* margin-top: 2rem; */
+}
+
+.about .row .image img{
+    width: 81%;
+    position: relative;
+    left: 5rem;
+    top: 0.3rem;
+
+
+}
+
+/* .about .row .content{
+flex:1 1 38rem;
+
+} */
+
+.h-secondary{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color:#611a1a;
+
+}
+.heading{
+color:#611a1a;
+
+}
+
+.content-para{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0.6rem;
+    font-size: 1.1rem;
+    font-weight: initial;
+    color: #442f2f;
+    text-align: justify;
+}
+
+.about .row .content .icons-container{
+flex-wrap:wrap;
+margin-top: 1.5rem;
+margin-bottom: 2.3rem;
+
+
+}
+
+.about .row .content .icons-container .icons{
+    background: #eee;
+    border-radius: 0.6rem;
+    border: 0.15rem solid rgba(0,0,0,0.2);
+    padding: 0.4rem 0.9rem;
+    /* cursor: pointer; */
+
+
+}
+
+.about .row .content .icons-container .icons .Truck{
+
+    font-size: 1.3rem;
+    color: #cf2f2fc4;
+    margin-right: 0.5rem;
+}
+
+.about .row .content .icons-container .icons span{
+    font-size: 0.96rem;
+    color: black;
+    font-family: "Roboto";
+}
+.about .row .content .icons-container .icons .Headset{
+    font-size: 1.4rem;
+    color: #cf2f2fc4;
+    margin-right: 0.7rem;
+}
+
+.about .row .content .icons-container .icons .Dollar{
+    font-size: 1.4rem;
+    color: #cf2f2fc4;
+    margin: right 0.7rem;
+    margin-right: 0.5rem;
+
+}
+
+
+.about .row .content  .about-btn{
+
+    text-decoration: none;
+    color: white;
+    background-color: rgb(231 62 71);
+    padding: 0.4rem 0.8rem;
+    font-family: "Open Sans";
+    border-radius: 0.67rem;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    top: 0.7rem;
+
+}
+
+.about .row .content  .about-btn:hover{
+    background-color:#4b4d47;
+    transition:0.3s;
+    color:white;
+
+}
+
+.content{
+
+padding-right:1.8rem;
+
+}
+
+.social-icons{
+
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.9rem;
+    color: #c97979;
+    margin-bottom: 0.8rem;
+    position: relative;
+    top:0.6rem;
+    left:13rem;
+
+}
+
+.social-icons a {
+color:#472222fc;
+
+
+}
+
+
+/*Utility Classes*/
+.span-style{
+color:#b94a1ec2;
+
+
+}
+
+.sub-heading{
+    padding-top: 1rem;
+}
+
+.anchor{
+text-decoration: none;
+
+
+}
+
